@@ -8,13 +8,10 @@ import logout from '../assets/logout.svg'
 import { MdClose, MdMenu } from 'react-icons/md'
 import { RiShoppingCart2Line } from 'react-icons/ri'
 import { ShopContext } from '../context/ShopContext'
-
 const Header = () => {
-
     const [menuOpened, setMenuOpened] = useState(false);
     const toggleMenu = () => setMenuOpened(!menuOpened);
     const { getTotalCartItems } = useContext(ShopContext);
-
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 0) {
@@ -38,7 +35,7 @@ const Header = () => {
                 {/* logo */}
                 <Link to={'/'} className='flex items-center gap-x-2'>
                     <img src={logo} alt='logoImg' height={31} width={31} />
-                    <span className='bold-24 hidden xs:flex'>Merchanza</span>
+                    <span className='bold-24 hidden xs:flex'>CAYCLOTHES</span>
                 </Link>
                 {/* Navbar & Buttons */}
                 <div className='flexCenter gap-x-4'>
@@ -78,5 +75,4 @@ const Header = () => {
         </header>
     )
 }
-
 export default Header

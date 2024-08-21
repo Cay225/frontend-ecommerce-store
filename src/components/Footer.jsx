@@ -11,7 +11,7 @@ const Footer = () => {
         {/* logo */}
         <Link to={'/'} className='flex items-center gap-x-2'>
           <img src={logo} alt='logoImg' height={31} width={31} />
-          <span className='bold-24 hidden xs:flex text-white'>Merchanza</span>
+          <span className='bold-24 hidden xs:flex text-white'>CAY WEARS</span>
         </Link>
         {/* Nav */}
         <div className='py-4'>
@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
         <SocialIcons />
         <hr className='h-[1px] w-2/3 my-3'/>
-        <div className='text-white'>Copyright &copy; Merchanza | All rights reserved.</div>
+        <div className='text-white'>Copyright &copy; CAY WEARS| All rights reserved.</div>
       </div>
     </footer>
   )
